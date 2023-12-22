@@ -1,10 +1,9 @@
 
 
 // Fetch data and initialize the chart
-const proxyUrl = 'https://cors-anywhere.herokuapp.com/'; // Example public proxy
 const targetUrl = 'https://www.cbexplorer.com/api/user-cam-trends-hourly.json';
 
-fetch(proxyUrl + targetUrl)
+fetch(targetUrl)
    .then(response => response.json())
    .then(data => {
        processData(data)
